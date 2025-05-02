@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer base{
+  #home{
+    background: url("../src/assets/imageprompt.png");
+    background-size: 100% 140%;
+  }
+  #couple{
+    background: url("../src/assets/bgrose.png");
+    background-size: 100% 140%;
+  }
+  #rsvp{
+    background: url("../src/assets/bgrose.png");
+    background-size: 100% 140%;
+  }
+}
+
+@theme{
+  --font-quickSand:"Quicksand", sans-serif;
+  --font-playfair:"Playfair Display", serif;
+}
