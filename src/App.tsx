@@ -8,6 +8,7 @@ import Footer from "./pages/Footer";
 import Story from "./pages/Story";
 import Location from "./pages/Location";
 import RSVP from "./pages/RSVP";
+import Quotes from "./pages/Quotes";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       </div>
       <Nav/>
       <Hero/>
+      <Quotes/>
       <Marriage/>  
       <Events/>
       <Gallery/>

@@ -10,8 +10,9 @@ const Quotes = () => {
       className="flex justify-center items-center p-12 font-quickSand text-2xl tracking-wide bg-linear-to-l from-rose-500 to-fuchsia"
       ref={refer}
       initial={{ opacity: 0, scale: 0 }}
-      animate={isInView ? { opacity: 1, scale: 1 } : {}}
-      transition={{ duration: 0.5 }}
+      animate={isInView ? { opacity: 1, scale: 1, transition:{
+        duration: 1.5, ease:"easeInOut"
+      }} : {}}
     >
       <p className="italic">
         <span>"</span>

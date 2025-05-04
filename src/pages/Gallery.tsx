@@ -16,7 +16,7 @@ const Gallery = () => {
             <div className="md:max-w-full max-w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 place-items-center">
                 {
                     imageItems.map((item, i)=>(
-                        <img src={item} className={`rounded-xl w-3/4 h-60 md:h-70 lg:h-70 border-x-4 ${i % 2==0? "border-rose-400":"border-indigo-400"}`} />
+                        <img src={item} className={`hover:scale-105 rounded-xl w-3/4 h-60 md:h-70 lg:h-70 border-x-4 ${i % 2==0? "border-rose-400":"border-indigo-400"}`} />
                     ))
                 }
             </div>

@@ -37,7 +37,7 @@ const Nav = () => {
   return (
     <motion.header 
         ref={refer} 
-        className={`z-10 fixed inset-x-0 top-0 flex justify-between items-center py-4 px-6 transition-all duration-700 ${scrolled? "bg-white text-black shadow-xl" : "bg-transparent shadow-none md:text-white"}`}
+        className={`z-90 fixed inset-x-0 top-0 flex justify-between items-center py-4 px-6 transition-all duration-700 ${scrolled? "bg-white text-black shadow-xl" : "bg-transparent shadow-none md:text-white"}`}
         initial={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
         animate={{ backgroundColor: scrolled ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0)' }}
         transition={{ duration: 0.3 }}
@@ -87,7 +87,7 @@ const Nav = () => {
         </nav>
         <button 
             onClick={()=> setClick(!click)} 
-            className="text-2xl md:hidden text-rose-600 fixed top-4 right-4 z-50"
+            className="text-2xl md:hidden text-rose-600 fixed top-4 right-4 z-90"
         >
             {click? <GiCrossedSabres/> : <MdFormatListBulleted/>}
         </button>
