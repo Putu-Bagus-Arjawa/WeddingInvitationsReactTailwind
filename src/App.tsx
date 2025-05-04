@@ -1,4 +1,3 @@
-// import WeddingDummy from "./components/WeddingDummy";
 import { BsMusicNote } from "react-icons/bs";
 import Nav from "./components/Nav";
 import Hero from "./pages/Hero";
@@ -25,7 +24,7 @@ const App = () => {
       <Location/>
       <RSVP/>
       <Footer/>
-      {/* <WeddingDummy/> */}
+
     </div>
   );
 };
