@@ -12,14 +12,14 @@ const Events = () => {
             title:"Ceremony", 
             address :"Widya Sabha, Kampus Unud No.666 Street", 
             date: "14 Februari 2030", 
-            desc: "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dicta odit nesciunt fugit culpa quod repellendus repellat tempora.",
+            desc: "The ceremony will be held there, full of beauty white dress for groom and bride, they will engaged as husband and wife.",
             colorBorder: "border-indigo-600"
         },
         {
             title: "After Event", 
             address :"Gedung BG 1.1, Kampus Unud No.666 Street", 
             date:"16 February 2030" , 
-            desc: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dicta odit nesciunt fugit culpa quod repellendus repellat tempora.",
+            desc: "After event, there is an event that's really fun, singing, dancing, eating, etc.",
             colorBorder: "border-rose-600"
         },
 

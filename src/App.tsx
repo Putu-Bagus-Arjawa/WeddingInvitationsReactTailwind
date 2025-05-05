@@ -12,7 +12,7 @@ import Quotes from "./pages/Quotes";
 
 const App = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-y-hidden">
       <div className="z-40 fixed bottom-4 right-4 bg-white p-2 rounded-full hover:bg-rose-400">
         <BsMusicNote/>
       </div>
