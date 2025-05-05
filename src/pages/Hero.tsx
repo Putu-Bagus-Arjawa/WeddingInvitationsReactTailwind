@@ -29,7 +29,7 @@ const Hero = () => {
                 {time.map((item, idx)=> (
                     <motion.div 
                         key={idx}
-                        className="bg-white rounded-xl w-12 h-12 flex items-center justify-center font-playfair"
+                        className="bg-white rounded-xl w-12 h-12 flex items-center justify-center font-playfair hover:scale-110 active:scale-110"
                         initial = {{ opacity: 0, y: 200 }}
                         animate ={isInView? "visible" : "hidden"}
                         variants={{
