@@ -1,8 +1,12 @@
 import { FaMapLocationDot } from "react-icons/fa6"
 import Card from "../components/Card"
 import { MdDateRange } from "react-icons/md"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Events = () => {
+      const refer = useRef<HTMLDivElement>(null);
+      const isInView = useInView(refer, { once: false });
     const itemEvents =[
         {
             title:"Ceremony", 
@@ -21,14 +25,21 @@ const Events = () => {
 
     ]
   return (
-    <section id="event" className="p-8 h-auto md:h-auto lg:h-screen w-screen flex flex-col justify-center items-center md:my-20 my-40 ">
+    <section ref={refer}id="event" className="p-8 h-auto md:h-auto lg:h-screen w-screen flex flex-col justify-center items-center md:my-20 my-40 ">
             <div className="flex flex-col items-center md:gap-y-4 gap-y-8 mb-14">
-                <h1 className="text-rose-600 text-4xl font-playfair">What Event Will be Helds?</h1>
+                <motion.h1 
+                    className="text-rose-600 text-4xl font-playfair"
+                    initial ={{ scale: 0 }}
+                    animate = {isInView?{ scale: 1, transition:{duration: 1, ease:"easeOut"}}: {}}
+                >What Event Will be Helds?</motion.h1>
                 <p className="p-[2px] bg-rose-500 w-20"></p>
             </div>
             <div className="flex flex-col gap-y-8 w-3/4 md:w-4xl ">
-                {itemEvents.map((items)=>(
-                        <div className={` bg-white max-w-4xl border-l-2 ${items.colorBorder} transition-all duration-200 hover:scale-110`}>
+                {itemEvents.map((items, idx)=>(
+                        <motion.div key={idx} className={` bg-white max-w-4xl border-l-2 ${items.colorBorder}`}
+                            initial ={{ scale: 0 }}
+                            animate = {isInView?{ scale: 1, transition:{delay:idx *0.4,duration: 1, ease:"easeOut"}}: {}}
+                        >
                         <Card>
                             <div className="flex md:flex-row flex-col w-full justify-between">
                                 <div className="md:w-1/2 w-full">
@@ -51,7 +62,7 @@ const Events = () => {
                                 </div>
                             </div>
                         </Card>
-                        </div>    
+                        </motion.div>    
                     ))
                 }
             </div>
