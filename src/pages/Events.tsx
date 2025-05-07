@@ -38,7 +38,7 @@ const Events = () => {
                 {itemEvents.map((items, idx)=>(
                         <motion.div key={idx} className={` bg-white max-w-4xl border-l-2 ${items.colorBorder}`}
                             initial ={{ scale: 0 }}
-                            animate = {isInView?{ scale: 1, transition:{delay:idx *0.4,duration: 1, ease:"easeOut"}}: {}}
+                            animate = {isInView?{ scale: 1, transition:{delay:idx *0.5,duration: 1, ease:"easeOut"}}: {}}
                         >
                         <Card>
                             <div className="flex md:flex-row flex-col w-full justify-between">

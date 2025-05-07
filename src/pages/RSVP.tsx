@@ -24,20 +24,20 @@ const RSVP = () => {
 
             >
                 <div className="flex md:flex-row flex-col justify-between gap-8 mb-4">
-                    <div className="flex flex-col w-full">
+                    <div className="flex flex-col w-full gap-y-2">
                         <label htmlFor="" className="font-playfair font-semibold">Full Name</label>
                         <input type="text" placeholder="Full Name"  
-                            className="font-quickSand border  focus:outline-none rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent md:px-4 md:py-2 px-2 py-1"
+                            className="font-quickSand border  focus:outline-none rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent  px-2 py-1"
                         />
                     </div>
-                    <div className="flex flex-col w-full">
+                    <div className="flex flex-col w-full gap-y-2">
                         <label htmlFor="" className="font-playfair font-semibold">Email</label>
                         <input type="text" placeholder="Full Name" 
-                            className="font-quickSand border  focus:outline-none rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent px-4 py-2" 
+                            className="font-quickSand border  focus:outline-none rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent px-2 py-1" 
                         />
                     </div>
                 </div>
-                <div className="mb-8">
+                <div>
                     <label htmlFor="" className="font-playfair font-semibold">Number of Guests</label>
                     <select name="" id="" className="w-full border  focus:outline-none rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent">
                         {number.map((items)=>(
